@@ -78,7 +78,7 @@ RUN groupadd --system relay --gid $RELAY_GID \
 
 RUN mkdir /work /etc/relay \
   && chown relay:relay /work /etc/relay
-VOLUME ["/work", "/etc/relay"]
+#VOLUME ["/work", "/etc/relay"]
 WORKDIR /work
 
 EXPOSE 3000
